@@ -415,12 +415,8 @@ Para siempre tuyo, profunda e infinitamente. 🐠💖`;
             if (flowersClicked === 6 && !poemRevealed) {
                 revealPoem();
             } else if (flowersClicked !== 6 && !poemRevealed) {
-                setTimeout(() => {
-                    if (flowersClicked !== 6 && !poemRevealed) {
-                        msgTextDiv.innerHTML = `🌸 Sigue haciendo clic en las flores púrpuras, mi amor. ¡Quedan ${6-flowersClicked} flor(es) para nuestro poema eterno! 🌸`;
-                    }
-                }, 4000);
-            }
+    msgTextDiv.innerHTML = `🌸 Sigue haciendo clic en las flores púrpuras, mi amor. ¡Quedan ${6-flowersClicked} flor(es) para nuestro poema eterno! 🌸`;
+}
         }
 
         function revealPoem() {
